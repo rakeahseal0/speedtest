@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta name=viewport content='width=700'>
+		<title>Speed Test | Rakesh seal</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	
+	<body>
+			<script src="http://connect.facebook.net/en_US/all.js#xfbml=1&appId=xxxxxxxxx
+"></script>
+		<div id="startWindow">
+			<div class="modalBox">
+				<h1>Test Your Typing Speed</h1>
+				<p>Test Your typing speed with this simple app.If you are smart enough you can simply fool it.Share your score in facebook and challange your friends :)</p>
+				<button id="startButton">Start</button>
+			</div>
+		</div>
+
+		<div id="timer">
+		</div>
+
+		<div id="wrapper">
+
+		<div id="paraContainer">
+			<p id="testPara"></p>
+		</div>
+
+		​<textarea id="textArea" name="textarea" rows="5" cols="50" onPaste="return false" placeholder="Timer will start when you start typing."></textarea>
+
+		</div>
+
+		<div id="newTestWindow">
+			<div class="modalBox">
+				<h1>Time's Up!</h1>
+				<p id="finalScore"></p>
+				<button id="newTestButton">Click to try again!</button>
+				<button id="shareBtn">Share to facebook</button>
+			</div>
+			
+		</div>
+<script>
+document.getElementById('shareBtn').onclick = function() {
+  FB.ui({
+    method: 'share',
+    display: 'popup',
+    href: '//your domain name',
+	 description: 'I just took a speed test take yours',
+	caption: 'An example caption',
+  }, function(response){});
+}
+</script>
+
+	<script type="text/javascript" src="test.js"></script>
+	</body>
+<html>
